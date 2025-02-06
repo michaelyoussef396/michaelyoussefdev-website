@@ -2,10 +2,15 @@
 import React from "react";
 import { motion } from "framer-motion";
 
-const HeaderButton: React.FC = () => {
+interface HeaderButtonProps {
+  text: string;
+  link: string;
+}
+
+const HeaderButton: React.FC<HeaderButtonProps> = ({ text, link }) => {
   return (
     <motion.a
-      href="/contact-us"
+      href={link}
       whileHover={{ scale: 1.05 }}
       className="relative flex flex-row justify-center items-center w-[212px] h-[50px] border border-transparent rounded-full overflow-hidden 
       transition-all duration-300 ease-[0.44,0,0.56,1] hover:border-white hover:bg-[#F52A03]"
@@ -14,7 +19,7 @@ const HeaderButton: React.FC = () => {
       <div className="relative flex flex-row justify-center items-center w-full h-full px-5">
         {/* CTA Text */}
         <p className="text-white font-raleway font-medium italic uppercase text-[14px] tracking-[0.15em] leading-[1.2] whitespace-nowrap">
-          Get in Touch
+          {text}
         </p>
 
         {/* Arrow Wrapper (Integrated with text) */}

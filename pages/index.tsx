@@ -1,6 +1,7 @@
 import Navbar from "@/components/NavBar";
 import AboutUs from "@/sections/AboutUs";
 import HeroBanner from "@/sections/HeroBanner";
+import PortfolioSection from "@/sections/PortfolioSection";
 
 export default function Home() {
   return (
@@ -8,6 +9,7 @@ export default function Home() {
       <Navbar />
       <HeroBanner />
       <AboutUs />
+      <PortfolioSection />
     </div>
   );
 }

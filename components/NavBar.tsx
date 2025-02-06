@@ -54,7 +54,7 @@ const Navbar: React.FC = () => {
 
         {/* Header Button (Desktop Only) */}
         <div className="hidden md:flex">
-          <HeaderButton />
+          <HeaderButton text="Get In Touch" link='/'  />
         </div>
 
         {/* Mobile Menu Button */}
@@ -107,7 +107,7 @@ const Navbar: React.FC = () => {
 
             {/* Mobile Header Button */}
             <div className="relative z-[2]">
-              <HeaderButton />
+              <HeaderButton text="Get In Touch" link='/' />
             </div>
           </motion.div>
         )}
