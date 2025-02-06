@@ -36,14 +36,25 @@ const AboutUs: React.FC = () => {
           </p>
 
           {/* CTA Button */}
-          <motion.a 
-            href="/about"
-            className="mt-6 px-5 sm:px-6 py-2 sm:py-3 bg-white text-main-dark font-semibold text-md sm:text-lg rounded-full shadow-md transition-all duration-300 hover:bg-gray-300 hover:scale-105"
-            whileHover={{ scale: 1.1 }}
-            whileTap={{ scale: 0.95 }}
-          >
-            Learn More About Me
-          </motion.a>
+          <div className="flex flex-col gap-4 sm:flex-row sm:gap-6">
+            <motion.a 
+              href="/about"
+              className="mt-6 px-5 sm:px-6 py-2 sm:py-3 bg-white text-main-dark font-semibold text-md sm:text-lg rounded-full shadow-md transition-all duration-300 hover:bg-gray-300 hover:scale-105"
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.95 }}
+            >
+              Learn More About Me
+            </motion.a>
+
+            <motion.a 
+              href="/about"
+              className="mt-6 px-5 sm:px-6 py-2 sm:py-3 bg-main-dark text-white font-semibold text-md sm:text-lg rounded-full shadow-md transition-all duration-300 hover:bg-black-300 hover:scale-105"
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.95 }}
+            >
+              View Projects
+            </motion.a>
+          </div>
           
           <LineAnimation />
         </motion.div>
