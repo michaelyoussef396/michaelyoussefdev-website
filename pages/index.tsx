@@ -1,4 +1,5 @@
 import Navbar from "@/components/NavBar";
+import SubscribeSection from "@/components/SubscribeSection";
 import AboutUs from "@/sections/AboutUs";
 import HeroBanner from "@/sections/HeroBanner";
 import PortfolioSection from "@/sections/PortfolioSection";
@@ -10,6 +11,7 @@ export default function Home() {
       <HeroBanner />
       <AboutUs />
       <PortfolioSection />
+      <SubscribeSection />
     </div>
   );
 }
